@@ -1,32 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
-import axios from "axios";
+//import axios from "axios";
 import pdf from "../../Assets/Kamanashish-Deb-Kallol.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
 function Resume() {
-  const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
-  const [spojRank, upadteSpojRank] = useState(0);
-  const [hackerrank, upadteHackerank] = useState(0);
-  const [sem, upadateSem] = useState(0);
-  const [cgpa, upadteCgpa] = useState(0);
+  // const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
+  // const [spojRank, upadteSpojRank] = useState(0);
+  // const [hackerrank, upadteHackerank] = useState(0);
+  // const [sem, upadateSem] = useState(0);
+  // const [cgpa, upadteCgpa] = useState(0);
 
-  useEffect(() => {
-    axios
-      .get(uri)
-      .then((res) => {
-        upadteSpojRank(res.data.message[0].spojRank);
-        upadteHackerank(res.data.message[1].hackerrank);
-        upadteCgpa(res.data.message[2].cgpa);
-        upadateSem(res.data.message[3].sem);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get(uri)
+  //     .then((res) => {
+  //       upadteSpojRank(res.data.message[0].spojRank);
+  //       upadteHackerank(res.data.message[1].hackerrank);
+  //       upadteCgpa(res.data.message[2].cgpa);
+  //       upadateSem(res.data.message[3].sem);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
 
   return (
     <Container fluid className="resume-section">
@@ -51,15 +51,15 @@ function Resume() {
                 "Operated on developing the frontend end of the website using Bootstrap, Javascript and backend APIs using Node.js",
               ]}
             />
-            {/* <h3 className="resume-title">Extracurricular Activities</h3> */}
+            
             <Resumecontent
               title="Customer Relationship Officer"
               date="Feb 2019 - March 2020"
-              content={[
-                "Worked on USA based company about 1 year",
-                "Worked on dealing with customers and handling data",
+              content={["Worked on USA based company about 1 year",
+              "Worked on dealing with customers and handling data",
               ]}
             />
+            
             {/* <Resumecontent
               title="Web Developer [Bitotsav-2020 Technical Fest of BIT Mesra]"
               content={[
@@ -72,8 +72,8 @@ function Resume() {
             <Resumecontent
               title="Metropolitan University"
               date="B.Sc. 2015 - 2018"
-              content={["CGPA: 2.88 (Hereafter-out of 4.00)"]}
-              // content={[`CGPA: ${cgpa} (Till ${sem}th Sem)`]}
+              content={["CGPA: 2.88 (Hereafter-out of 4.00)"]}     
+              //content={[`CGPA: ${cgpa} (Till ${sem}th Sem) `]}
             />
             <Resumecontent
               title="The Scholarshome School And College"
@@ -86,14 +86,25 @@ function Resume() {
               content={["CGPA: 5.00 (out of 5.00)"]}
             />
             <h3 className="resume-title">Ranks and Achivements</h3>
-            <Resumecontent
+            {/* <Resumecontent
               title=""
               content={[
-                // `Current rank in Spoj ${spojRank}`,
-                // `Current rank in HackerRank  ${hackerrank}`,
+                 `Current rank in Spoj ${spojRank}`,
+                 `Current rank in HackerRank  ${hackerrank}`,
                 "Achieve 7th position in IRC-2015 (International Robotic Challenge)",
-                // "Participant in Hack-A-Bit 2019",
+                 "Participant in Hack-A-Bit 2019",
               ]}
+            /> */}
+            <Resumecontent
+              title="International Robotic Challenge-2015"
+              date="Dec 2015"
+              content={["Achieved 7th position"]}
+            />
+            <Resumecontent
+              title="Unibator-Under the super vision of Bangladesh Hi-tech Park Authority"
+              date="Program on going"
+              content={["Project name: Internet Controlled Multifuntional Unnamed Ground Vehicle For Surveillance",
+              "Selected in top 250 projects among 7500 projects all over the country"]}
             />
           </Col>
         </Row>

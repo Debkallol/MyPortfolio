@@ -9,7 +9,7 @@ import facebokPostCoffeeCabanaSecreenshot from "../../Assets/Projects/facebokpos
 import facebookOriginalContentCoffeeCabana from "../../Assets/Projects/facebook original content coffee cabana.jpeg";
 import bakeryHutSecreenshot from "../../Assets/Projects/bakery hut secreenshot.jpg";
 import bakeryhutlogo from "../../Assets/Projects/bakery hut logo.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+//import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
   return (
@@ -29,7 +29,7 @@ function Projects() {
               isBlog={false}
               title="Bakery Hut"
               description="Bakery Hut is a online bakery item seling platform on facebook. It is a cover image including their menu"
-              link="https://github.com/soumyajit4419/Chatify"
+              //link="https://github.com/soumyajit4419/Chatify"
             />
           </Col>
 
@@ -39,7 +39,7 @@ function Projects() {
               isBlog={false}
               title="Bakery Hut Logo"
               description=""
-              link="https://github.com/soumyajit4419/AI_For_Social_Good"
+              //link="https://github.com/soumyajit4419/AI_For_Social_Good"
             />
           </Col>
 
@@ -49,7 +49,7 @@ function Projects() {
               isBlog={false}
               title="Original Content"
               description=""
-              link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              //link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
             />
           </Col>
 
@@ -59,7 +59,7 @@ function Projects() {
               isBlog={false}
               title="Facebok Content Post Secreenshot"
               description="Coffee Cabana is a renowned coffee shop at purbo zindabazar in Sylhet."
-              link="https://github.com/soumyajit4419/Plant_AI"
+             // link="https://github.com/soumyajit4419/Plant_AI"
             />
           </Col>
 
@@ -69,7 +69,7 @@ function Projects() {
               isBlog={false}
               title="Bakery Hut Secreenshot"
               description="Bakery Hut situated in Sreemangol"
-              link="https://github.com/soumyajit4419/Editor.io"
+              //link="https://github.com/soumyajit4419/Editor.io"
             />
           </Col>
 

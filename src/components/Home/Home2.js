@@ -3,8 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.jpg";
 import Tilt from "react-parallax-tilt";
 import {
-  AiFillGithub,
-  AiOutlineTwitter,
+  //AiFillGithub,
+  //AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
