@@ -17,7 +17,7 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          Some of my works <strong className="purple">Works </strong>
+          Some of my <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
           Other works will be update soon here.. . .
